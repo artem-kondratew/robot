@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(Robot)
+project(robot)
 
 # Default to C11
 if(NOT CMAKE_C_STANDARD)
