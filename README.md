@@ -1,1 +1,1 @@
-## lidar robot ROS package
+## robot ROS package for dynamic SLAM
