@@ -103,14 +103,15 @@ def generate_launch_description():
         package='rtabmap_slam',
         executable='rtabmap',
         name='rtabmap',
-        arguments=[
-            'map_always_update', 'true',
-            'frame_id', 'base_footprint'
-        ],
+        # parameters=[{
+        #     'map_always_update': 'true',
+        #     'frame_id': 'base_footprint',
+        #     'use_sim_time': 'true'
+        # }],
         remappings=[
             ('rgb/image', '/camera/image_raw'),
             ('rgb/camera_info', '/camera/camera_info'),
-            ('depth/image', '/camera/depth/image_raw')
+            ('depth/image', '/camera/depth/image_raw'),
         ],
     )
 
